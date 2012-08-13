@@ -23,29 +23,33 @@ The dimension parameter is a swiss-army knife, all-in-one style parameter. Pass 
 
 #### Resize/Crop Flags
 
-**WxH#** : Center Crop to w/h, new image will be WxH, sized up if necessary
+**WxH#**
 
-For example, with an image that is 150x150px and `dim=400x200#`
+Center Crop to W/H, new image will be WxH, sized up if necessary
 
-Image would be scaled up to 400x400 and then center cropped to fit 400x200
+For example, with an image that is 150x150px and `dim=400x200#`, the image would be scaled up to 400x400 and then center cropped to fit 400x200
 
-**WxH!** : Rescale the picture to w/h
+**WxH!**
 
-For example, with an image that is 150x150px and `dim=400x200!`
+Rescale the image to W/H. For example, with an image that is 150x150px and `dim=400x200!`, the image would be scaled to 200px high and by 400px wide
 
-Image would be scaled in height to 200px and by width to 400px
+**WxH>**
 
-**WxH>** : (width is fixed)
-**WxH<** : (height is fixed)
+Image will be rescaled to fit W/H with a fixed **width**
 
-Image will be rescaled to fit w/h with one fixed dimension
+**WxH<**
 
-**WxH(** : (width is fixed)
-**WxH)** : (height is fixed)
+Image will be rescaled to fit W/H with a fixed **height**
 
-Image will be cropped to fit w/h with one fixed dimension
+**WxH(**
 
-### Quality
+Image will be cropped to fit W/H with a fixed **width**
+
+**WxH)**
+
+Image will be cropped to fit W/H with a fixed **height**
+
+### Quality (`1 - 100`)
 
 Pass an integer from 1 to 100 to set your desired quality.
 
