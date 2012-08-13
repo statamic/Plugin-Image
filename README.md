@@ -11,7 +11,7 @@ The Image plugin is used for resizing, cropping, and manipulating your images on
 ## Example Tag
 
     {{ image src="/url_path/to/image" dim="400x300" }}
-      <img src="{{ url }}" width={{ width }} height={{ height }} />
+      <img src="{{ image_url }}" width={{ width }} height={{ height }} />
     {{ /image }}
 
 ## Parameters
@@ -54,3 +54,17 @@ Image will be cropped to fit W/H with a fixed **height**
 Pass an integer from 1 to 100 to set your desired quality.
 
     quality="80"
+
+## Variables
+
+### Image URL (`{{ image_url }}`)
+
+The processed and cached image URL to reference.
+
+### Width (`{{ width }}`)
+
+The final width of the imag
+
+### Height (`{{ height }}`)
+
+The final width of the imag

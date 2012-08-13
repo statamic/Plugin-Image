@@ -3,7 +3,7 @@ class Plugin_image extends Plugin {
 
   var $meta = array(
     'name'       => 'Image',
-    'version'    => '0.9',
+    'version'    => '0.9.1',
     'author'     => 'Mubashar Iqbal',
     'author_url' => 'http://mubashariqbal.com'
   );
@@ -95,7 +95,8 @@ class Plugin_image extends Plugin {
     $ret = array();
     $ret['width'] = $info[0];
     $ret['height'] = $info[1];
-    $ret['url'] = "/".$new_file;
+    $ret['url'] = "/".$new_file; #backwards compatibility
+    $ret['image_url'] = $ret['url'];
 
     return $ret;
   }
