@@ -63,8 +63,8 @@ The processed and cached image URL to reference.
 
 ### Width `{{ width }}`
 
-The final width of the imag
+The final width of the image
 
 ### Height `{{ height }}`
 
-The final width of the imag
+The final width of the image
