@@ -16,7 +16,7 @@ The Image plugin is used for resizing, cropping, and manipulating your images on
 
 ## Parameters
 
-### Quality `1 - 100`
+### Quality `quality`
 
 Pass an integer from 1 to 100 to set your desired quality.
 
