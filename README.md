@@ -16,7 +16,13 @@ The Image plugin is used for resizing, cropping, and manipulating your images on
 
 ## Parameters
 
-### Dimension (`dim`)
+### Quality `1 - 100`
+
+Pass an integer from 1 to 100 to set your desired quality.
+
+    quality="80"
+
+### Dimension `dim`
 The dimension parameter is a swiss-army knife, all-in-one style parameter. Pass it your width x height (WxH), and your resize/crop flag and you're done.
 
     dim="400x300>"
@@ -49,22 +55,16 @@ Image will be cropped to fit W/H with a fixed **width**
 
 Image will be cropped to fit W/H with a fixed **height**
 
-### Quality (`1 - 100`)
-
-Pass an integer from 1 to 100 to set your desired quality.
-
-    quality="80"
-
 ## Variables
 
-### Image URL (`{{ image_url }}`)
+### Image URL `{{ image_url }}`
 
 The processed and cached image URL to reference.
 
-### Width (`{{ width }}`)
+### Width `{{ width }}`
 
 The final width of the imag
 
-### Height (`{{ height }}`)
+### Height `{{ height }}`
 
 The final width of the imag
