@@ -10,9 +10,9 @@ The Image plugin is used for resizing, cropping, and manipulating your images on
 
 ## Example Tag
 
-  {{ image src="/url_path/to/image" dim="400x300" }}
-    <img src="{{ url }}" width={{ width }} height={{ height }} />
-  {{ /image }}
+    {{ image src="/url_path/to/image" dim="400x300" }}
+      <img src="{{ url }}" width={{ width }} height={{ height }} />
+    {{ /image }}
 
 ## Parameters
 
@@ -25,20 +25,22 @@ The dimension parameter is a swiss-army knife, all-in-one style parameter. Pass 
 
 **WxH#** : Center Crop to w/h, new image will be WxH, sized up if necessary
 
- For example, with an image that is 150x150px dim=400x200#
- Image would be scaled up to 400x400 and then center cropped to fit 400x200
+For example, with an image that is 150x150px and `dim=400x200#`
+
+Image would be scaled up to 400x400 and then center cropped to fit 400x200
 
 **WxH!** : Rescale the picture to w/h
 
- For example, with an image that is 150x150px dim=400x200!
- Image would be scaled in height to 200px and by width to 400px
+For example, with an image that is 150x150px and `dim=400x200!`
+
+Image would be scaled in height to 200px and by width to 400px
 
 **WxH>** : (width is fixed)
 **WxH<** : (height is fixed)
 
 Image will be rescaled to fit w/h with one fixed dimension
 
-** WxH(** : (width is fixed)
+**WxH(** : (width is fixed)
 **WxH)** : (height is fixed)
 
 Image will be cropped to fit w/h with one fixed dimension
