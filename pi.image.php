@@ -3,13 +3,13 @@ class Plugin_image extends Plugin {
 
   var $meta = array(
     'name'       => 'Image',
-    'version'    => '0.9.1',
+    'version'    => '0.9.2',
     'author'     => 'Mubashar Iqbal',
     'author_url' => 'http://mubashariqbal.com'
   );
 
   public function index() {
-    $src            = $this->fetch_param('src', null);
+    $src            = $this->fetch_param('src', null, false, false, false);
     $dim            = $this->fetch_param('dim', null);
     $quality        = $this->fetch_param('quality', '100');
 
