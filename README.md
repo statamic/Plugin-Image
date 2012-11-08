@@ -39,11 +39,11 @@ For example, with an image that is 150x150px and `dim=400x200#`, the image would
 
 Rescale the image to W/H. For example, with an image that is 150x150px and `dim=400x200!`, the image would be scaled to 200px high and by 400px wide
 
-**WxH>**
+**WxH<**
 
 Image will be rescaled to fit W/H with a fixed **width**
 
-**WxH<**
+**WxH>**
 
 Image will be rescaled to fit W/H with a fixed **height**
 
