@@ -260,8 +260,8 @@ class Image {
 
     if ( ! isset($create) OR ! function_exists($create))
     {
-      // throw new Exception('Installed GD does not support :type images',
-      //   array(':type' => image_type_to_extension($this->type, FALSE)));
+      $format = 'Cannot handle images of type %s for file: %s';
+      throw new Exception(sprintf($format, image_type_to_extension($this->type), $file));
     }
 
     // Save function for future use
