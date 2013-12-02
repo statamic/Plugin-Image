@@ -1,3 +1,5 @@
+*This plugin is no longer being maintained and has been replaced by the native [Transform](http://statamic.com/learn/documentation/tags/transform) tag. Cheers!*
+
 Statamic Image Plugin
 ================================
 
