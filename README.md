@@ -1,6 +1,6 @@
 *This plugin is no longer being maintained and has been replaced by the native [Transform](http://statamic.com/learn/documentation/tags/transform) tag. Cheers!*
 
-Statamic Image Plugin
+Statamic Image Plugin ![Statamic v1](https://img.shields.io/badge/statamic-v1-lightgrey.svg?style=flat-square)
 ================================
 
 The Image plugin is used for resizing, cropping, and manipulating your images on the fly, right from your template code. All images are cached and timestamped so caches are refreshed when files update.
